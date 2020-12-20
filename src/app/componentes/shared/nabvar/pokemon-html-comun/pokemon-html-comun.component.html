@@ -1,0 +1,29 @@
+<div class="card animated fadeIn fastcard border-dark mb-3 p-3 mb-2 bg-light text-dark">
+  <img class="card-img-top img-fluid" [src]="pokemon.img" [alt]="pokemon.nombre">
+  <div class="card-body">
+
+
+    <label for="cars">Selecciona el nombre en el idoma que te ofrecemos</label>
+    <select>
+      <option value="saab">Nombre:</option>
+      <option value="volvo">Ingles:{{ pokemon.name.english }}</option>
+      <option value="saab">Japonés:{{ pokemon.name.japanese }}</option>
+      <option value="mercedes">Chino:{{ pokemon.name.chinese }}</option>
+      <option value="mercedes">Francés:{{ pokemon.name.french }}</option>
+    </select>
+
+    <p class="card-text">Ataque: {{ pokemon.base.Attack }} </p>
+    <p class="card-text">Defensa: {{ pokemon.base.Defense }} </p>
+    <p class="card-text">Vida: {{ pokemon.base.HP }} </p>
+    <p class="card-text">Velocidad:  {{ pokemon.base.Speed }} </p>
+    <p class="card-text">Ataque especial:{{ pokemon.base.SpAttack }} </p>
+    <p class="card-text">Defensa especial:{{ pokemon.base.SpDefense }} </p>
+    
+
+    <p class="card-text"><small class="text-muted">{{ pokemon.type }}</small></p>
+
+    <button (click)="verPokemon(index)"type="button" class="btn btn-outline-primary btn-block">
+        Ver más...
+    </button>
+  </div>
+</div>

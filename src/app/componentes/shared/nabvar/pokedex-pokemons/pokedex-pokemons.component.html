@@ -1,0 +1,7 @@
+<div id="color">
+<h1 id="espacio">Pokedex:</h1>
+<hr>
+<div class="card-columns p-3 mb-2 bg-dark text-dark">
+	<app-pokemon-html-comun (pokemonSeleccionado)="verPokemon($event)" [pokemon]="pokemon" [index]="i" *ngFor="let pokemon of pokemons; let i = index"></app-pokemon-html-comun>
+</div>
+</div>
